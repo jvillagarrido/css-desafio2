@@ -1,62 +1,201 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+.contenedor{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  height:830px;
+  }
  
-/* Hero Section */
-#Hero-Section {
-  height: 350px;
+  .contacto-container2{
+    width: 25%;
+    padding: 0px;
+    margin:  0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: solid 3px #d7d7d7;
+    height:100%;
+   }
+ 
+   .contacto-item1{
+    display: flex;
+    padding: 5px;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;   
+    border-color: #dddada;
+    }
+
+  .contacto-subitem{
+      width: 100%;
+      display: flex;
+      padding: 0px;
+      margin: 0px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: left;
+  }
+  .contacto-item2{
+    display: flex;
+    padding: 35px 0px 35px 0px;
+    margin: 0px;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;   
+    border-color: #dddada;
+    text-align: center;
+    }
+
+.contacto-item3{
+      display: flex;
+      padding: 10px;
+      margin: 0px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;   
+      border-color: #dddada;
 }
 
-/* Mis trabajos */
-#Mis-trabajos .image-top {
-  height: 250px;
-  background-repeat: no-repeat;
+.contacto-boton{
+  background-color: #A491D2;
+  border: solid 0px #A491D2;
+  width: 170px;
+  height: 50px;
+  color: white;
+  font-size: 1.2em;
+}
+.contacto-boton:hover{
+  background-color: #b3a4d5;
+} 
+.contacto-boton:focus{
+  background-color: #a09ea4;
+} 
+.separador{
+  padding:0px;
+  margin: 0px;
 }
 
-/* Contacto */
-#Contacto form label {
-  font-weight: 700;
-  color: #373a3c;
+.contacto-item-tam1{
+      padding: 0px;
+      margin: 0px 0px 0px 15px;
+      font-weight: 500;
+      font-family: "Roboto";
+      font-size: 1.2em;
+      width: 75%;
+      text-align: left;
+  }
+
+.contacto-item-tam2{
+    padding: 0px;
+    margin: 0px 0px 0px 15px;
+    font-weight: 300;
+    font-family: "Roboto";
+    font-size: 0.8em;
+    text-align: left;
 }
 
-@media (max-width: 768px) {
-  #Contacto form label {
+.contacto-item1-ico{
+  padding: 5px;
+  margin: 5px;
+  color:gray;
+}
+
+.contacto-item-tam3{
+  padding: 0px;
+  margin: 0px 0px 0px 15px;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 1.2em;
+  text-align: left;
+}
+
+ .contacto-item-img{
+     width:  2.8em;
+      height: 2.8em;
+      border-radius: 50%;
+      padding: 0px;
+      margin: 0px 0px 0px 15px;
+  }
+
+.contacto-item-img2{
+    width:  3.2em;
+     height: 3.2em;
+     border-radius: 50%;
+     padding: 0px;
+     margin: 0px 0px 0px 15px;
+ }
+
+.principal-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f1f1;
+  width:75%;
+  height:100%;
+ }
+
+.principal-item-img{
+    width: 20em;
+    height: 20em;
+    border-radius: 5%;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+}
+   
+.principal-item{
+  padding: 0px;
+  margin: 0px;
+  width:30em;
+  text-align: center;
+  }
+
+.tam1{
+    font-weight: 500;
+    font-family: "Roboto";
+    opacity: 100%;
+    font-size: 3.438em;
+    width: 75%;
+}
+ 
+.tam2{
     font-weight: 400;
+    font-family: "Roboto";
+    opacity: 100%;
+    font-size: 1.25em;
+    width: 75%;
+}
+
+@media(max-width: 500px) {
+  .contacto-container2{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
   }
-
-  .navbar-brand{
-    width: 100px;
+  .principal-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%
   }
-
-
+  .contenedor{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  .principal-item-img{
+    width: 30%;
+    height: 30%;
+    }
+    .tam1{
+      width: 50%;
+    }
+    .tam2{
+      width: 50%;
+    }
 }
 
-/* mis clases css */
-.no-padd
-{
-  padding: 0px;
-}
-.img-tam{
-  height: 75px;
-  width: 90px;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 50%;
-}
-.img-tam2{
-  height: 250px;
-  width: 100%;
-  padding: 1px;
-  margin: 0px;
-}
-
-.img-tam-carr img {
-  width: 50%;
-  height: 300px;
-  max-height: 300px;
-  border-radius: 3%;
-  margin: 20px auto;
-  padding:  20px;
-}
- 
  
