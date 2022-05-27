@@ -13,7 +13,7 @@
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"/>
-    <title>Desafío 1 - CSS Avanzado</title>
+    <title>Desafío 2 - CSS Avanzado - Grid</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
@@ -28,102 +28,56 @@
 
   <body>
  
-    <div  class="contenedor">
-      <div  class="contacto-container2">
-        <div class="contacto-item1">
-            <img  class="contacto-item-img" src="assets/img/maria.jpg" alt="Maria" />
-            <div class="contacto-subitem">
-              <p class="contacto-item-tam1"  >   María  </p>
-              <p class="contacto-item-tam2" > Activa Ahora  </p>
-            
+    <div class="grid-container">
+      <header> <i class="fa-solid fa-dumpster"></i> Mi Ecommerce </header>
+      <menu>   
+         <ul>
+          <li> <p class="titulo">Categorías</p>  </li>
+          <li>Perfumes <p class="cantidad">(13)</p></li>
+          <li>Ropa <p class="cantidad">(21)</p></li>
+          <li>Accesorios <p class="cantidad">(41)</p></li>
+          <li> Zapatos <p class="cantidad">(10)</p> </li>
+          </ul>
+       </menu> 
+      <main id="main" >  
+           <div class="grid-item">
+              <div>
+                <img src="assets/img/perfume1.jpg"  class="img-tam2"  alt="perfume hypnose" />
+                <p class="titulo"> Hypnose Lacome 100 ml</p>
+                <p class="precio">98.000</p>
+                <div class="pie-item-grid"> Comprar </div>
+              </div>
             </div>
-            <i class="fa-solid fa-message contacto-item1-ico"></i>
-            <i class="fa-solid fa-grip-lines contacto-item1-ico"></i>
-         
-        </div> 
-        <hr class="separador">
-        <div class="contacto-item2">
-          <button type="button" class="contacto-boton" > Nuevo Chat</button>
-        </div>
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/juanita.jpg" alt="Juanita" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >   Juanita  </p>
-            <p class="contacto-item-tam3" > At vero eos et accusa  </p>
-          </div>
-        </div> 
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/alberto.jpg" alt="Alberto" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >   Alberto  </p>
-            <p class="contacto-item-tam3" > blanditiis praesentium  </p>
-          </div>
-        </div> 
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/ignacio.jpg" alt="Ignacio" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >   Ignacio  </p>
-            <p class="contacto-item-tam3" >officiis debitis aut </p>
-          </div>
-        </div> 
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/cristian.jpg" alt="Cristian" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >   Cristian  </p>
-            <p class="contacto-item-tam3" >Nam libero tempore</p>
-          </div>
-        </div> 
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/mariajose.jpg" alt="Maria Jose" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >   María José  </p>
-            <p class="contacto-item-tam3" > impedit quo minus id </p>
-          </div>
-        </div>   
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/gonzalo.jpg" alt="Gonzalo" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >   Gonzalo  </p>
-            <p class="contacto-item-tam3" > At vero eos et accusa </p>
-          </div>
-        </div>   
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/juanpablo.jpg" alt="Juan Pablo" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >   Juan Pablo  </p>
-            <p class="contacto-item-tam3" > necessitatibus saepe </p>
-          </div>
-        </div>   
-        <hr class="separador">
-        <div class="contacto-item3">
-          <img  class="contacto-item-img2" src="assets/img/magdalena.jpg" alt="Magdalena" />
-          <div class="contacto-subitem">
-            <p class="contacto-item-tam1"  >  Magdalena  </p>
-            <p class="contacto-item-tam3" > ut et voluptates </p>
-          </div>
-        </div>   
-     
-     
-      </div>
- 
-      
-            <div class="principal-container">
-          
-              <img class="principal-item-img" src="assets/img/hand.png" alt="22" />
-              <p class="principal-item tam1"> Comienza el Nertworking  </p>
-              <p class="principal-item tam2"> Presiona el botón <b>“Nuevo chat”</b> para comenzar a crear nuevas 
-               redes de contacto para tu empresa o emprendimiento. </p>
-           </div>
-         
+            <div class="grid-item">
+              <div>
+                <img src="assets/img/chaqueta1.jpg"  class="img-tam2"  alt="chaqueta mujer" />
+                <p class="titulo">Chaqueta Rainers mujer</p>
+                <p class="precio">57.500</p>
+                <div class="pie-item-grid"> Comprar </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div  >
+                <img src="assets/img/zapato1.jpg"  class="img-tam2"  alt="zapato hush puppies" />
+                <p class="titulo">Zapatos hombre Hush Puppies</p>
+                <p class="precio">63.500</p>
+                <div class="pie-item-grid"> Comprar </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div>
+                <img src="assets/img/cartera1.jpg"  class="img-tam2"  alt="cartera amphora" />
+                <p class="titulo">Cartera Amphora</p>
+                <p class="precio">25.000</p>
+                <div class="pie-item-grid"> Comprar </div>
+              </div>
+            </div>
+
+
+      </main>
+      <footer >  © Jubitza Villanueva 2022. Todos los derechos reservados. </footer>
     </div>
-        
+      
  
   </body>
 </html>
